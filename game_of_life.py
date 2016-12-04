@@ -98,8 +98,8 @@ class GameOfLifeGui:
             self.win.master.title("Game of life. steps: " + str(self.steps) + ", lives: " + str(lives))
         self.win.getMouse()
 
-cells = Cells(30,30,0.2)
-game = GameOfLifeGui(cells, 20)
+cells = Cells(20,20,0.2)
+game = GameOfLifeGui(cells, 30)
 cells.set_change_handler(game)
 game.run_gui()
 
